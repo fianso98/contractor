@@ -2,6 +2,11 @@ body {
   margin: 0;
   padding: 0;
 }
+/**
+  *color used
+  *c9c9c9
+  *e0e0e0
+*/
 /* menu style */
 nav {
   position: fixed;
@@ -14,7 +19,7 @@ nav {
 }
 nav > ul > li > a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -24,31 +29,54 @@ nav > ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
   padding-right: 20px;
   padding-left: 20px;
 }
 nav > ul > li {
   float: left;
 }
+nav > ul > li:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
 .menuOnTheRight {
   float: right;
 }
+nav > ul > li:hover:after {
+  width: 100%;
+  background: cornflowerblue;
+}
+/*
 nav > ul > li > a:hover {
-  background-color: #111;
+  border-bottom: 2px solid cornflowerblue;
+}*/
+.activeBackground {
+  background-color: #f0f8ff;
 }
-.active {
-  background-color: #4caf50;
+.active::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background: #5a86d5;
 }
+
 /*main */
 main {
   margin: 0;
   padding: 0;
 }
 /*Home*/
+
 #Home > .Home__img {
   background-image: url("../images/mainImg.jpg");
-  height: 500px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 130%;
@@ -60,23 +88,33 @@ main {
   display: flex;
   justify-content: center;
 }
-.Home__title > p {
+.Home__titleBackground {
+  background-color: #c9c9c9;
+  opacity: 0.4;
+  position: absolute;
+  height: 9em;
+  width: 100%;
+  top: 48%;
   z-index: 2;
+}
+.Home__title > p {
+  z-index: 3;
   margin: 0;
   position: absolute;
-  top: 30%;
+  top: 50%;
 
-  font-family: "Langar", cursive;
-  font-size: 100px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 5em;
+  font-weight: bold;
+  text-transform: uppercase;
   color: black;
-  border-bottom: black 2px solid;
 }
 /*work*/
 #Work {
-  background-color: #a9a9a9;
+  background-color: #c9c9c9;
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 .Work__content {
   padding: 20px;
@@ -90,10 +128,12 @@ main {
 }
 .Work__title > h1 {
   font-family: "JetBrains Mono", monospace;
+  font-size: 3.5em;
 }
 .row {
   display: flex;
-  padding-bottom: 10px;
+  padding-bottom: 4em;
+  line-height: 1.8em;
 }
 .columnOf3 {
   flex: 33.33%;
