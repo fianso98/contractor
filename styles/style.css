@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+
+  font-family: "Roboto", sans-serif;
 }
 /**
   *color used
@@ -207,19 +209,28 @@ main {
   padding: 20px;
   border: black 1px solid;
 }
+.ContactUs__info > p {
+  line-height: 2em;
+}
 .ContactUs__email {
+  padding-top: 2em;
   display: flex;
 }
 .ContactUs__email > p {
   margin: 0;
   font-size: large;
 }
-
+.ContactUs__email > i {
+  padding-top: 2.5px;
+}
 .ContactUs__adress {
-  margin-top: 5px;
+  padding-top: 1em;
   display: flex;
 }
 .ContactUs__adress > p {
   margin: 0;
   font-size: large;
+}
+.ContactUs__adress > i {
+  padding-top: 2.5px;
 }
