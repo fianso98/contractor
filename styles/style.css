@@ -13,6 +13,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 400;
+  transition: display 1.7s ease;
 }
 .hide {
   display: none;
@@ -80,8 +81,6 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 130%;
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
   position: relative;
 }
 .Home__title {
@@ -103,7 +102,7 @@ main {
   position: absolute;
   top: 50%;
 
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Roboto", sans-serif;
   font-size: 5em;
   font-weight: bold;
   text-transform: uppercase;
@@ -118,8 +117,8 @@ main {
 }
 .Work__content {
   padding: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5em;
+  margin-right: 5em;
   background-color: #e0e0e0;
 }
 .Work__title {
@@ -127,8 +126,9 @@ main {
   justify-content: center;
 }
 .Work__title > h1 {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Roboto", sans-serif;
   font-size: 3.5em;
+  text-transform: uppercase;
 }
 .row {
   display: flex;
@@ -142,6 +142,9 @@ main {
 .columnOf2 {
   flex: 50%;
   padding: 2px;
+}
+.columnWithImage {
+  flex: 100%;
 }
 .columnWithTextOnTheRight {
   padding-left: 12px;
@@ -162,7 +165,7 @@ main {
   align-items: center;
 }
 .ContactUS__title > h1 {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Roboto", sans-serif;
 
   margin: 0;
 }

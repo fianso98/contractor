@@ -47,5 +47,5 @@ window.addEventListener('scroll', function() {
     }
     timer = setTimeout(function() {
         menu.classList.remove('hide')  
-    }, 150);
+    }, 550);
 }, false);
