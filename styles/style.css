@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* menu style */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 400;
+}
+.hide {
+  display: none;
+}
+nav > ul > li > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+nav > ul > li {
+  float: left;
+}
+.menuOnTheRight {
+  float: right;
+}
+nav > ul > li > a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4caf50;
+}
+/*main */
+main {
+  margin: 0;
+  padding: 0;
+}
+/*Home*/
+#Home > .Home__img {
+  background-image: url("../images/mainImg.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 130%;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  position: relative;
+}
+.Home__title {
+  display: flex;
+  justify-content: center;
+}
+.Home__title > p {
+  z-index: 2;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+
+  font-family: "Langar", cursive;
+  font-size: 100px;
+  color: black;
+  border-bottom: black 2px solid;
+}
+/*work*/
+#Work {
+  background-color: #a9a9a9;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Work__content {
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #e0e0e0;
+}
+.Work__title {
+  display: flex;
+  justify-content: center;
+}
+.Work__title > h1 {
+  font-family: "JetBrains Mono", monospace;
+}
+.row {
+  display: flex;
+  padding-bottom: 10px;
+}
+.columnOf3 {
+  flex: 33.33%;
+  padding: 2px;
+}
+.columnOf2 {
+  flex: 50%;
+  padding: 2px;
+}
+.columnWithTextOnTheRight {
+  padding-left: 12px;
+  flex: 100%;
+}
+.columnWithTextOnTheLeft {
+  padding-right: 12px;
+  flex: 100%;
+}
+/*Contact us*/
+#ContactUs {
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+}
+.ContactUS__title {
+  padding: 100px;
+  align-items: center;
+}
+.ContactUS__title > h1 {
+  font-family: "JetBrains Mono", monospace;
+
+  margin: 0;
+}
+.ContactUs__info {
+  margin: 20px;
+  padding: 20px;
+  border: black 1px solid;
+}
+.ContactUs__email {
+  display: flex;
+}
+.ContactUs__email > p {
+  margin: 0;
+  font-size: large;
+}
+
+.ContactUs__adress {
+  margin-top: 5px;
+  display: flex;
+}
+.ContactUs__adress > p {
+  margin: 0;
+  font-size: large;
+}
